@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "email": "juan.perez@example.com",
+      "contraseña": "juan1234"
+    },
+    {
+      "id": 2,
+      "nombre": "María",
+      "apellido": "López",
+      "email": "maria.lopez@example.com",
+      "contraseña": "maria1234"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos",
+      "apellido": "González",
+      "email": "carlos.gonzalez@example.com",
+      "contraseña": "carlos1234"
+    },
+    {
+      "id": 4,
+      "nombre": "Ana",
+      "apellido": "Martínez",
+      "email": "ana.martinez@example.com",
+      "contraseña": "ana1234"
+    },
+    {
+      "id": 5,
+      "nombre": "Luis",
+      "apellido": "Hernández",
+      "email": "luis.hernandez@example.com",
+      "contraseña": "luis1234"
+    },
+    {
+      "id": 6,
+      "nombre": "Laura",
+      "apellido": "Sánchez",
+      "email": "laura.sanchez@example.com",
+      "contraseña": "laura1234"
+    },
+    {
+      "id": 7,
+      "nombre": "Roberto",
+      "apellido": "García",
+      "email": "roberto.garcia@example.com",
+      "contraseña": "roberto1234"
+    },
+    {
+      "id": 8,
+      "nombre": "Daniela",
+      "apellido": "Ramírez",
+      "email": "daniela.ramirez@example.com",
+      "contraseña": "daniela1234"
+    },
+    {
+      "id": 9,
+      "nombre": "Miguel",
+      "apellido": "Flores",
+      "email": "miguel.flores@example.com",
+      "contraseña": "miguel1234"
+    },
+    {
+      "id": 10,
+      "nombre": "Sofía",
+      "apellido": "Castillo",
+      "email": "sofia.castillo@example.com",
+      "contraseña": "sofia1234"
+    },
+    {
+      "id": 11,
+      "nombre": "Fernando",
+      "apellido": "Ortiz",
+      "email": "fernando.ortiz@example.com",
+      "contraseña": "fernando1234"
+    },
+    {
+      "id": 12,
+      "nombre": "Patricia",
+      "apellido": "Gómez",
+      "email": "patricia.gomez@example.com",
+      "contraseña": "patricia1234"
+    },
+    {
+      "id": 13,
+      "nombre": "Jorge",
+      "apellido": "Navarro",
+      "email": "jorge.navarro@example.com",
+      "contraseña": "jorge1234"
+    },
+    {
+      "id": 14,
+      "nombre": "Sara",
+      "apellido": "Morales",
+      "email": "sara.morales@example.com",
+      "contraseña": "sara1234"
+    },
+    {
+      "id": 15,
+      "nombre": "David",
+      "apellido": "Alvarez",
+      "email": "david.alvarez@example.com",
+      "contraseña": "david1234"
+    }
+  ]
+  
