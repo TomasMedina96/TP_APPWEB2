@@ -1,258 +1,240 @@
 [
-    {
-      "id": 1,
-      "id_usuario": 1,
-      "fecha": "2024-03-01",
-      "total": 948.99,
-      "dirección": "123 Apple Street, Cupertino, CA",
-      "productos": [
-        {
-          "id": 1,
-          "cantidad": 1
-        },
-        {
-          "id": 11,
-          "cantidad": 1
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "id_usuario": 2,
-      "fecha": "2024-03-02",
-      "total": 1198.99,
-      "dirección": "456 Tech Lane, Tech City, Tech Country",
-      "productos": [
-        {
-          "id": 3,
-          "cantidad": 1
-        },
-        {
-          "id": 14,
-          "cantidad": 1
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "id_usuario": 3,
-      "fecha": "2024-03-03",
-      "total": 848.99,
-      "dirección": "789 Gamer's Paradise, Console City, Fun Land",
-      "productos": [
-        {
-          "id": 4,
-          "cantidad": 1
-        },
-        {
-          "id": 5,
-          "cantidad": 1
-        }
-      ]
-    },
-    {
-        "id": 4,
-        "id_usuario": 4,
-        "fecha": "2024-03-04",
-        "total": 848.99,
-        "dirección": "123 Pixel Place, Google City, CA",
-        "productos": [
-          {
-            "id": 9,
-            "cantidad": 1
-          },
-          {
-            "id": 13,
-            "cantidad": 1
-          }
-        ]
-      },
+  {
+    "id": 1,
+    "id_usuario": 1,
+    "fecha": "2024-03-01",
+    "total": 948.99,
+    "dirección": "123 Apple Street, Cupertino, CA",
+    "productos": [
       {
-        "id": 5,
-        "id_usuario": 5,
-        "fecha": "2024-03-05",
-        "total": 498.99,
-        "dirección": "456 Switch Street, Nintendo Nation, JP",
-        "productos": [
-          {
-            "id": 6,
-            "cantidad": 1
-          },
-          {
-            "id": 15,
-            "cantidad": 1
-          }
-        ]
-      },
-      {
-        "id": 6,
-        "id_usuario": 6,
-        "fecha": "2024-03-06",
-        "total": 798.99,
-        "dirección": "789 Echo Circle, Amazon Forest, WA",
-        "productos": [
-          {
-            "id": 10,
-            "cantidad": 1
-          },
-          {
-            "id": 12,
-            "cantidad": 1
-          }
-        ]
-      },
-      {
-        "id": 7,
-        "id_usuario": 7,
-        "fecha": "2024-03-07",
-        "total": 1298.99,
-        "dirección": "101 Dell Drive, Round Rock, TX",
-        "productos": [
-          {
-            "id": 7,
-            "cantidad": 1
-          },
-          {
-            "id": 14,
-            "cantidad": 1
-          }
-        ]
-      },
-      {
-        "id": 8,
-        "id_usuario": 8,
-        "fecha": "2024-03-08",
-        "total": 1198.99,
-        "dirección": "202 HP Haven, Palo Alto, CA",
-        "productos": [
-          {
-            "id": 8,
-            "cantidad": 1
-          },
-          {
-            "id": 13,
-            "cantidad": 1
-          }
-        ]
-      },
-      {
-        "id": 9,
-        "id_usuario": 9,
-        "fecha": "2024-03-09",
-        "total": 748.99,
-        "dirección": "303 Galaxy Avenue, Samsung City, Korea",
-        "productos": [
-          {
-            "id": 2,
-            "cantidad": 1
-          },
-          {
-            "id": 12,
-            "cantidad": 1
-          }
-        ]
-      },
-      {
-        "id": 10,
-        "id_usuario": 10,
-        "fecha": "2024-03-10",
-        "total": 748.95,
-        "dirección": "404 Fitbit Fitness, Health City, CA",
-        "productos": [
-          {
-            "id": 6,
-            "cantidad": 1
-          },
-          {
-            "id": 15,
-            "cantidad": 1
-          }
-        ]
+        "id": 1,
+        "cantidad": 1
       },
       {
         "id": 11,
-        "id_usuario": 11,
-        "fecha": "2024-03-11",
-        "total": 648.98,
-        "dirección": "505 PlayStation Plaza, Sony Town, Japan",
-        "productos": [
-          {
-            "id": 4,
-            "cantidad": 1
-          },
-          {
-            "id": 10,
-            "cantidad": 1
-          }
-        ]
-      },
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "id_usuario": 2,
+    "fecha": "2024-03-02",
+    "total": 1198.99,
+    "dirección": "456 Tech Lane, Tech City, Tech Country",
+    "productos": [
       {
-        "id": 12,
-        "id_usuario": 12,
-        "fecha": "2024-03-12",
-        "total": 1048.99,
-        "dirección": "606 Xbox Circle, Microsoft City, WA",
-        "productos": [
-          {
-            "id": 5,
-            "cantidad": 1
-          },
-          {
-            "id": 11,
-            "cantidad": 1
-          }
-        ]
-      },
-      {
-        "id": 13,
-        "id_usuario": 13,
-        "fecha": "2024-03-13",
-        "total": 1248.99,
-        "dirección": "707 Dell Domain, Dell City, TX",
-        "productos": [
-          {
-            "id": 7,
-            "cantidad": 1
-          },
-          {
-            "id": 13,
-            "cantidad": 1
-          }
-        ]
+        "id": 3,
+        "cantidad": 1
       },
       {
         "id": 14,
-        "id_usuario": 14,
-        "fecha": "2024-03-14",
-        "total": 898.95,
-        "dirección": "808 HP Heights, HP City, CA",
-        "productos": [
-          {
-            "id": 8,
-            "cantidad": 1
-          },
-          {
-            "id": 15,
-            "cantidad": 1
-          }
-        ]
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "id_usuario": 3,
+    "fecha": "2024-03-03",
+    "total": 848.99,
+    "dirección": "789 Gamer's Paradise, Console City, Fun Land",
+    "productos": [
+      {
+        "id": 4,
+        "cantidad": 1
+      },
+      {
+        "id": 5,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "id_usuario": 4,
+    "fecha": "2024-03-04",
+    "total": 848.99,
+    "dirección": "123 Pixel Place, Google City, CA",
+    "productos": [
+      {
+        "id": 9,
+        "cantidad": 1
+      },
+      {
+        "id": 13,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "id_usuario": 5,
+    "fecha": "2024-03-05",
+    "total": 498.99,
+    "dirección": "456 Switch Street, Nintendo Nation, JP",
+    "productos": [
+      {
+        "id": 6,
+        "cantidad": 1
       },
       {
         "id": 15,
-        "id_usuario": 15,
-        "fecha": "2024-03-15",
-        "total": 1048.99,
-        "dirección": "909 Google Parkway, Google City, CA",
-        "productos": [
-          {
-            "id": 9,
-            "cantidad": 1
-          },
-          {
-            "id": 11,
-            "cantidad": 1
-          }
-        ]
+        "cantidad": 1
       }
-  ]
-  
+    ]
+  },
+  {
+    "id": 6,
+    "id_usuario": 6,
+    "fecha": "2024-03-06",
+    "total": 798.99,
+    "dirección": "789 Echo Circle, Amazon Forest, WA",
+    "productos": [
+      {
+        "id": 10,
+        "cantidad": 1
+      },
+      {
+        "id": 12,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "id_usuario": 7,
+    "fecha": "2024-03-07",
+    "total": 1298.99,
+    "dirección": "101 Dell Drive, Round Rock, TX",
+    "productos": [
+      {
+        "id": 7,
+        "cantidad": 1
+      },
+      {
+        "id": 14,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "id_usuario": 8,
+    "fecha": "2024-03-08",
+    "total": 1198.99,
+    "dirección": "202 HP Haven, Palo Alto, CA",
+    "productos": [
+      {
+        "id": 8,
+        "cantidad": 1
+      },
+      {
+        "id": 13,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "id_usuario": 9,
+    "fecha": "2024-03-09",
+    "total": 748.99,
+    "dirección": "303 Galaxy Avenue, Samsung City, Korea",
+    "productos": [
+      {
+        "id": 2,
+        "cantidad": 1
+      },
+      {
+        "id": 12,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "id_usuario": 10,
+    "fecha": "2024-03-10",
+    "total": 748.95,
+    "dirección": "404 Fitbit Fitness, Health City, CA",
+    "productos": [
+      {
+        "id": 6,
+        "cantidad": 1
+      },
+      {
+        "id": 15,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "id_usuario": 11,
+    "fecha": "2024-03-11",
+    "total": 648.98,
+    "dirección": "505 PlayStation Plaza, Sony Town, Japan",
+    "productos": [
+      {
+        "id": 4,
+        "cantidad": 1
+      },
+      {
+        "id": 10,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "id_usuario": 12,
+    "fecha": "2024-03-12",
+    "total": 1048.99,
+    "dirección": "606 Xbox Circle, Microsoft City, WA",
+    "productos": [
+      {
+        "id": 5,
+        "cantidad": 1
+      },
+      {
+        "id": 11,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "id_usuario": 13,
+    "fecha": "2024-03-13",
+    "total": 1248.99,
+    "dirección": "707 Dell Domain, Dell City, TX",
+    "productos": [
+      {
+        "id": 7,
+        "cantidad": 1
+      },
+      {
+        "id": 13,
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "id_usuario": 14,
+    "fecha": "2024-03-14",
+    "total": 898.95,
+    "dirección": "808 HP Heights, HP City, CA",
+    "productos": [
+      {
+        "id": 8,
+        "cantidad": 1
+      },
+      {
+        "id": 15,
+        "cantidad": 1
+      }
+    ]
+  }
+]
