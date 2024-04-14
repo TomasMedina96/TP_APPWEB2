@@ -11,6 +11,7 @@ const userData = JSON.parse(fileUsers)
 
 const router = Router()
 
+//OBTENER USUARIOS POR ID
 router.get('/users/:id', (req,res)=>{
    try {
 
@@ -33,6 +34,8 @@ router.get('/users/:id', (req,res)=>{
 
 })
 
+
+//REGISTRAR UN NUEVO USUARIO
 router.post('/newuser/', async (req,res)=>{
    try {
 
@@ -64,6 +67,8 @@ router.post('/newuser/', async (req,res)=>{
 
 })
 
+
+//MODIFICAR EL EMAIL DE UN USUARIO CON SU ID
 router.put('/email/', async (req,res)=>{
    try {
 

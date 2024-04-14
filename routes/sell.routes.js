@@ -12,6 +12,7 @@ const sellData = JSON.parse(fileSells)
 
 const router = Router()
 
+//OBTENER TODAS LAS VENTAS
 router.post('/sells/', (req,res)=>{
    try {
 
@@ -41,6 +42,8 @@ router.post('/sells/', (req,res)=>{
 
 })
 
+
+//ELIMINAR UNA VENTA
 router.delete('/deletesell/:id', async (req,res)=>{
    try {
 
@@ -69,6 +72,8 @@ router.delete('/deletesell/:id', async (req,res)=>{
 })
 
 
+
+//OBTENER VENTAS POR ID
 router.get('/sells/:id', (req,res)=>{
    try {
 
