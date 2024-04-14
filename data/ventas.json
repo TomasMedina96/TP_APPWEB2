@@ -236,5 +236,22 @@
         "cantidad": 1
       }
     ]
+  },
+  {
+    "id": 15,
+    "id_usuario": 12,
+    "fecha": "2024-03-14",
+    "total": 848.95,
+    "dirección": "808 HP Heights, HP City, CA",
+    "productos": [
+      {
+        "id": 4,
+        "cantidad": 1
+      },
+      {
+        "id": 1,
+        "cantidad": 1
+      }
+    ]
   }
 ]
