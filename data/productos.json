@@ -4,120 +4,134 @@
       "nombre": "iPhone 13",
       "desc": "Smartphone de última generación de Apple",
       "precio": 729.00,
-      "imagen": "iphone_13.jpg",
-      "en_stock": true
+      "imagen": "https://m.media-amazon.com/images/I/71DVgBTdyLL._AC_SL1500_.jpg",
+      "en_stock": true,
+      "categoria_id": 1
     },
     {
       "id": 2,
       "nombre": "Samsung Galaxy S21",
       "desc": "Smartphone de alta gama de Samsung",
       "precio": 699.00,
-      "imagen": "samsung_s21.jpg",
-      "en_stock": false
+      "imagen": "https://www.lavanguardia.com/andro4all/hero/2021/02/Vdeo-con-Samsung-Galaxy-S21-Ultra.jpg?width=1200&aspect_ratio=16:9",
+      "en_stock": false,
+      "categoria_id": 1
     },
     {
       "id": 3,
       "nombre": "MacBook Pro 14",
       "desc": "Laptop profesional de Apple con chip M1",
       "precio": 1999.00,
-      "imagen": "macbook_pro_14.jpg",
-      "en_stock": true
+      "imagen": "https://m.media-amazon.com/images/I/71an9eiBxpL._AC_SL1500_.jpg",
+      "en_stock": true,
+      "categoria_id": 2
     },
     {
       "id": 4,
       "nombre": "Sony PlayStation 5",
       "desc": "Consola de juegos de última generación de Sony",
       "precio": 499.00,
-      "imagen": "ps5.jpg",
-      "en_stock": true
+      "imagen": "https://www.shutterstock.com/image-photo/next-generation-game-console-isolated-260nw-2267910599.jpg",
+      "en_stock": true,
+      "categoria_id": 3
     },
     {
       "id": 5,
       "nombre": "Xbox Series X",
       "desc": "Consola de juegos de última generación de Microsoft",
       "precio": 499.00,
-      "imagen": "xbox_series_x.jpg",
-      "en_stock": false
+      "imagen": "https://m.media-amazon.com/images/I/61JGKhqxHxL._SL1500_.jpg",
+      "en_stock": false,
+      "categoria_id": 3
     },
     {
       "id": 6,
       "nombre": "Nintendo Switch",
       "desc": "Consola de juegos híbrida de Nintendo",
       "precio": 299.00,
-      "imagen": "nintendo_switch.jpg",
-      "en_stock": true
+      "imagen": "https://m.media-amazon.com/images/I/61-PblYntsL._SL1500_.jpg",
+      "en_stock": true,
+      "categoria_id": 3
     },
     {
       "id": 7,
       "nombre": "Dell XPS 15",
       "desc": "Laptop de alto rendimiento de Dell",
       "precio": 1199.00,
-      "imagen": "dell_xps_15.jpg",
-      "en_stock": true
+      "imagen": "https://m.media-amazon.com/images/I/71pC69I3lzL._AC_SL1500_.jpg",
+      "en_stock": true,
+      "categoria_id": 2
     },
     {
       "id": 8,
       "nombre": "HP Spectre x360",
       "desc": "Laptop convertible premium de HP",
       "precio": 1099.00,
-      "imagen": "hp_spectre_x360.jpg",
-      "en_stock": false
+      "imagen": "https://i.blogs.es/6b9d9c/hp-spectre-x360-1/1366_2000.jpg",
+      "en_stock": false,
+      "categoria_id": 2
     },
     {
       "id": 9,
       "nombre": "Google Pixel 6",
       "desc": "Smartphone de Google con Android puro",
       "precio": 599.00,
-      "imagen": "google_pixel_6.jpg",
-      "en_stock": true
+      "imagen": "https://i.blogs.es/eea1f7/pixel/1366_2000.webp",
+      "en_stock": true,
+      "categoria_id": 1
     },
     {
       "id": 10,
       "nombre": "Amazon Echo Dot (4th Gen)",
       "desc": "Altavoz inteligente con Alexa de Amazon",
       "precio": 49.99,
-      "imagen": "echo_dot_4.jpg",
-      "en_stock": true
+      "imagen": "https://m.media-amazon.com/images/I/71JB6hM6Z6L._AC_SL1500_.jpg",
+      "en_stock": true,
+      "categoria_id": 6
     },
     {
       "id": 11,
       "nombre": "Apple AirPods Pro",
       "desc": "Auriculares inalámbricos con cancelación de ruido de Apple",
       "precio": 249.00,
-      "imagen": "airpods_pro.jpg",
-      "en_stock": true
+      "imagen": "https://m.media-amazon.com/images/I/71zny7BTRlL._AC_SL1500_.jpg",
+      "en_stock": true,
+      "categoria_id": 4
     },
     {
       "id": 12,
       "nombre": "Samsung Galaxy Buds Plus",
       "desc": "Auriculares inalámbricos de Samsung con sonido AKG",
       "precio": 149.99,
-      "imagen": "galaxy_buds_plus.jpg",
-      "en_stock": false
+      "imagen": "data:image/jpeg;base64,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",
+      "en_stock": false,
+      "categoria_id": 4
     },
     {
       "id": 13,
       "nombre": "Logitech MX Master 3",
       "desc": "Ratón inalámbrico avanzado de Logitech",
       "precio": 99.99,
-      "imagen": "logitech_mx_master_3.jpg",
-      "en_stock": true
+      "imagen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/51d16cb9-97f6-4be6-b870-e91f8a509db5.0ca692e47a38cad8f4c7b6d454b11e83.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "en_stock": true,
+      "categoria_id": 5
     },
     {
       "id": 14,
       "nombre": "Apple Watch Series 7",
       "desc": "Reloj inteligente de Apple con seguimiento de salud",
       "precio": 399.00,
-      "imagen": "apple_watch_series_7.jpg",
-      "en_stock": true
+      "imagen": "https://m.media-amazon.com/images/I/51NV+STh2IL._AC_SL1000_.jpg",
+      "en_stock": true,
+      "categoria_id": 6
     },
     {
       "id": 15,
       "nombre": "Fitbit Charge 5",
       "desc": "Pulsera de actividad física avanzada de Fitbit",
       "precio": 179.95,
-      "imagen": "fitbit_charge_5.jpg",
-      "en_stock": true
+      "imagen": "https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/Fitbit_Charge_5_release_date_renders_drdNBC.jpg",
+      "en_stock": true,
+      "categoria_id": 6
     }
-  ]
-  
+]

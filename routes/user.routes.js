@@ -11,29 +11,22 @@ const userData = JSON.parse(fileUsers)
 
 const router = Router()
 
-//OBTENER USUARIOS POR ID
-router.get('/users/:id', (req,res)=>{
+// Endpoint para validar usuarios
+router.post('/users/validation', (req, res) => {
    try {
+       const { email, pass } = req.body;
 
-      const id_usuario = parseInt(req.params.id);
+       const result = userData.find(e => e.email === email && e.contraseña === pass);
 
-      const result = userData.find(e => e.id == id_usuario)
-
-
-      if(result){
-         res.status(200).json(result)
-      }
-      else{
-         res.status(400).json('Usuario no encontrado')
-      }
- 
-      
+       if (result) {
+           res.status(200).json({ message: 'Usuario validado con éxito', id: result.id , email: result.email});
+       } else {
+           res.status(400).json('Usuario no encontrado');
+       }
    } catch (error) {
-      res.status(500).json('Error en el servidor: ' + error.message);
+       res.status(500).json('Error en el servidor: ' + error.message);
    }
-
-})
-
+});
 
 //REGISTRAR UN NUEVO USUARIO
 router.post('/newuser/', async (req,res)=>{

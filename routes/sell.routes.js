@@ -12,6 +12,44 @@ const sellData = JSON.parse(fileSells)
 
 const router = Router()
 
+//CARGAR UNA NUEVA VENTA EN VENTAS.JSON
+router.post('/newSell/', async (req,res) =>{
+
+   try {
+      const lastSellId = sellData.length > 0 ? sellData[sellData.length -1].id + 1 : 1
+   
+
+      const id_usuario = req.body.id_usuario
+      const fecha = req.body.fecha
+      const total = req.body.total
+      const dirección = req.body.dirección
+      const productos = req.body.productos
+  
+  
+      const Data = {
+        "id": lastSellId,
+        "id_usuario": id_usuario,
+        "fecha": fecha,
+        "total": total,
+        "dirección": dirección,
+        "productos": productos
+      }
+  
+      sellData.push(Data)
+  
+      await writeFile('./data/ventas.json', JSON.stringify(sellData, null, 2), 'utf-8');
+  
+      res.status(200).json('todo salio ok')
+      
+   } catch (error) {
+      res.status(400).json(error);
+   }
+
+    
+
+})
+
+
 //OBTENER TODAS LAS VENTAS
 router.post('/sells/', (req,res)=>{
    try {

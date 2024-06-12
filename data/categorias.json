@@ -1,0 +1,29 @@
+{
+    "categorias": [
+      {
+        "id": 1,
+        "nombre": "Smartphones"
+      },
+      {
+        "id": 2,
+        "nombre": "Laptops"
+      },
+      {
+        "id": 3,
+        "nombre": "Consolas de Juegos"
+      },
+      {
+        "id": 4,
+        "nombre": "Auriculares"
+      },
+      {
+        "id": 5,
+        "nombre": "Accesorios"
+      },
+      {
+        "id": 6,
+        "nombre": "Dispositivos Inteligentes"
+      }
+    ]
+  }
+  
