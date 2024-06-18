@@ -3,6 +3,7 @@ import cors from 'cors'
 import userRouter from './routes/user.routes.js'
 import sellRouter from './routes/sell.routes.js'
 import productsRouter from './routes/products.routes.js'
+import categoriesRouter from './routes/categories.routes.js'
 
 const app = express()
 
@@ -22,6 +23,8 @@ app.use(cors({
 app.use('/user', userRouter)
 app.use('/sell', sellRouter)
 app.use('/products', productsRouter)
+app.use('/categories', categoriesRouter)
+
 
 
 
