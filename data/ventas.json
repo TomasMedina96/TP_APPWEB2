@@ -349,5 +349,22 @@
         "cantidad": 1
       }
     ]
+  },
+  {
+    "id": 20,
+    "id_usuario": "1",
+    "fecha": "2024-06-18T06:09:27.779Z",
+    "total": 1428,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      },
+      {
+        "id": "2",
+        "cantidad": 1
+      }
+    ]
   }
 ]
