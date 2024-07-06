@@ -3,6 +3,9 @@ import { Router } from "express";
 //funcion de node js para leer archivos
 import {readFile, writeFile} from 'fs/promises';
 
+import jwt from 'jsonwebtoken'
+import bcrypt from 'bcryptjs'
+
 //lee y trae el archivo
 const fileUsers = await readFile('./data/usuarios.json','utf-8')
 
@@ -16,12 +19,18 @@ router.post('/users/validation', (req, res) => {
    try {
        const { email, pass } = req.body;
 
-       const result = userData.find(e => e.email === email && e.contraseña === pass);
+       const result = userData.find(e => e.email === email);
+       if(!result){
+         return res.status(404).send({status:false});
+       }
 
-       if (result) {
+       const controlPass = bcrypt.compareSync(pass , result.contraseña)
+       console.log(controlPass)
+
+       if (controlPass) {
            res.status(200).json({ message: 'Usuario validado con éxito', id: result.id , email: result.email});
        } else {
-           res.status(400).json('Usuario no encontrado');
+           res.status(401).json('Usuario no encontrado');
        }
    } catch (error) {
        res.status(500).json('Error en el servidor: ' + error.message);
@@ -32,7 +41,7 @@ router.post('/users/validation', (req, res) => {
 router.post('/newuser/', async (req,res)=>{
    try {
 
-      const lastUserId = userData[userData.length - 1].id;
+      let lastUserId = userData.length > 0 ? userData[userData.length - 1].id : 0;
 
       const { nombre, apellido, email, contraseña } = req.body;
 
@@ -41,13 +50,14 @@ router.post('/newuser/', async (req,res)=>{
             return res.status(400).json({ error: 'Todos los campos son obligatorios: nombre, apellido, email y contraseña' });
         }
 
-
+        const hashedPass = bcrypt.hashSync(contraseña, 8)
+        console.log(hashedPass)
        const new_user =   {
          "id": lastUserId+1,
          "nombre": nombre,
          "apellido": apellido,
          "email": email,
-         "contraseña": contraseña
+         "contraseña": hashedPass
        }
 
        userData.push(new_user);
