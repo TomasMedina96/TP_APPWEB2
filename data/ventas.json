@@ -366,5 +366,410 @@
         "cantidad": 1
       }
     ]
+  },
+  {
+    "id": 21,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T19:59:46.367Z",
+    "total": 1458,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:02:34.756Z",
+    "total": 1458,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:04:59.091Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:05:54.363Z",
+    "total": 9424,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      },
+      {
+        "id": "2",
+        "cantidad": 1
+      },
+      {
+        "id": "3",
+        "cantidad": 4
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:08:09.988Z",
+    "total": 1428,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      },
+      {
+        "id": "2",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:08:50.743Z",
+    "total": 3427,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      },
+      {
+        "id": "2",
+        "cantidad": 1
+      },
+      {
+        "id": "3",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:08:58.577Z",
+    "total": 3427,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      },
+      {
+        "id": "2",
+        "cantidad": 1
+      },
+      {
+        "id": "3",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:10:09.549Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:13:28.177Z",
+    "total": 699,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "2",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:28:59.203Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:29:35.065Z",
+    "total": 1999,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "3",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:29:41.225Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:30:07.920Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:30:24.955Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:34:54.630Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:35:12.075Z",
+    "total": 699,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "2",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:35:40.846Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:35:49.578Z",
+    "total": 699,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "2",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T20:37:05.545Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T21:09:30.288Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T21:11:02.301Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T21:11:15.393Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T21:12:20.106Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T21:13:12.211Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T21:13:48.145Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T21:23:13.674Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "id_usuario": "TOMAS",
+    "fecha": "2024-07-08T21:26:56.386Z",
+    "total": 729,
+    "dirección": "trattorialapasta@hotmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "id_usuario": "TOMAS",
+    "fecha": "2024-07-08T21:27:01.089Z",
+    "total": 699,
+    "dirección": "trattorialapasta@hotmail.com",
+    "productos": [
+      {
+        "id": "2",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "id_usuario": "JESSICA MARIEL",
+    "fecha": "2024-07-08T21:29:37.093Z",
+    "total": 729,
+    "dirección": "tomasmedina962@gmail.com",
+    "productos": [
+      {
+        "id": "1",
+        "cantidad": 1
+      }
+    ]
   }
 ]

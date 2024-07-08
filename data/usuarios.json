@@ -12,5 +12,19 @@
     "apellido": "Medina",
     "email": "tomasmedina962@gmail.com",
     "contraseña": "$2a$08$QalSlm4dx3y6QVn3WhSBfek0RzIxL53aceGea34g/0nFAtaWV8rey"
+  },
+  {
+    "id": 3,
+    "nombre": "JESSICA MARIEL",
+    "apellido": "Gonzal",
+    "email": "tomasmedina@gmail.com",
+    "contraseña": "$2a$08$cfw7QNyk9O8QTNN.P5j62.OTv5KC9FsPKYBtaLl3dKimpYbfBGKNW"
+  },
+  {
+    "id": 4,
+    "nombre": "TOMAS",
+    "apellido": "medina",
+    "email": "trattorialapasta@hotmail.com",
+    "contraseña": "$2a$08$xFjOyM16IVRgrRUvS89UmuXrMgmUNieFoXAgBwzZGn/.O2CTkzVVO"
   }
 ]

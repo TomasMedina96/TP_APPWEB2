@@ -2,8 +2,9 @@
 import { Router } from "express";
 //funcion de node js para leer archivos
 import {readFile, writeFile} from 'fs/promises';
+import { sign } from "../utils/middleware.js";
 
-import jwt from 'jsonwebtoken'
+import { decode } from "../utils/middleware.js";
 import bcrypt from 'bcryptjs'
 
 //lee y trae el archivo
@@ -14,8 +15,10 @@ const userData = JSON.parse(fileUsers)
 
 const router = Router()
 
+
+
 // Endpoint para validar usuarios
-router.post('/users/validation', (req, res) => {
+router.post('/users/validation', async(req, res) => {
    try {
        const { email, pass } = req.body;
 
@@ -25,10 +28,17 @@ router.post('/users/validation', (req, res) => {
        }
 
        const controlPass = bcrypt.compareSync(pass , result.contraseña)
-       console.log(controlPass)
+
+       const resultado = {
+         "nombre": result.nombre,
+         "apellido": result.apellido,
+         "email" : result.email
+       }
 
        if (controlPass) {
-           res.status(200).json({ message: 'Usuario validado con éxito', id: result.id , email: result.email});
+            const token = await sign(resultado)
+            const decodificado = await decode(token)
+            res.status(200).json({"decode":decodificado,"token":token});    
        } else {
            res.status(401).json('Usuario no encontrado');
        }
@@ -51,7 +61,7 @@ router.post('/newuser/', async (req,res)=>{
         }
 
         const hashedPass = bcrypt.hashSync(contraseña, 8)
-        console.log(hashedPass)
+
        const new_user =   {
          "id": lastUserId+1,
          "nombre": nombre,

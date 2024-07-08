@@ -2,7 +2,7 @@
 import { Router } from "express";
 //funcion de node js para leer archivos
 import {readFile , writeFile} from 'fs/promises';
-
+import { verify } from "../utils/middleware.js";
 //lee y trae el archivo
 const fileSells = await readFile('./data/ventas.json','utf-8')
 //Lo convierte en JSON.
@@ -24,22 +24,29 @@ router.post('/newSell/', async (req,res) =>{
       const total = req.body.total
       const dirección = req.body.dirección
       const productos = req.body.productos
-  
-  
-      const Data = {
-        "id": lastSellId,
-        "id_usuario": id_usuario,
-        "fecha": fecha,
-        "total": total,
-        "dirección": dirección,
-        "productos": productos
+      const token = req.body.token
+      const verificado = await verify(token)
+
+      if(verificado){
+         const Data = {
+            "id": lastSellId,
+            "id_usuario": id_usuario,
+            "fecha": fecha,
+            "total": total,
+            "dirección": dirección,
+            "productos": productos
+          }
+      
+          sellData.push(Data)
+      
+          await writeFile('./data/ventas.json', JSON.stringify(sellData, null, 2), 'utf-8');
+      
+          res.status(200).json(true)
       }
-  
-      sellData.push(Data)
-  
-      await writeFile('./data/ventas.json', JSON.stringify(sellData, null, 2), 'utf-8');
-  
-      res.status(200).json('todo salio ok')
+      else{
+         res.status(200).json(false);
+      }
+
       
    } catch (error) {
       res.status(400).json(error);
