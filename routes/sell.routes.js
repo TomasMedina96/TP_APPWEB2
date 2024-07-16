@@ -3,6 +3,9 @@ import { Router } from "express";
 //funcion de node js para leer archivos
 import {readFile , writeFile} from 'fs/promises';
 import { verify } from "../utils/middleware.js";
+
+import { createSell } from "../db/actions/sell.actions.js";
+
 //lee y trae el archivo
 const fileSells = await readFile('./data/ventas.json','utf-8')
 //Lo convierte en JSON.
@@ -16,36 +19,24 @@ const router = Router()
 router.post('/newSell/', async (req,res) =>{
 
    try {
-      const lastSellId = sellData.length > 0 ? sellData[sellData.length -1].id + 1 : 1
-   
-
       const id_usuario = req.body.id_usuario
       const fecha = req.body.fecha
       const total = req.body.total
-      const dirección = req.body.dirección
+      const email = req.body.email
       const productos = req.body.productos
       const token = req.body.token
       const verificado = await verify(token)
 
-      if(verificado){
-         const Data = {
-            "id": lastSellId,
-            "id_usuario": id_usuario,
-            "fecha": fecha,
-            "total": total,
-            "dirección": dirección,
-            "productos": productos
-          }
-      
-          sellData.push(Data)
-      
-          await writeFile('./data/ventas.json', JSON.stringify(sellData, null, 2), 'utf-8');
-      
-          res.status(200).json(true)
-      }
-      else{
-         res.status(200).json(false);
-      }
+
+       if(verificado){
+        const newSell= await createSell({id_usuario,fecha,total,email,productos})
+
+         res.status(200).json(true)
+
+       }
+       else{
+          res.status(200).json(false);
+       }
 
       
    } catch (error) {

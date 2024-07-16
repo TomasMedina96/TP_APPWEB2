@@ -5,6 +5,10 @@ import sellRouter from './routes/sell.routes.js'
 import productsRouter from './routes/products.routes.js'
 import categoriesRouter from './routes/categories.routes.js'
 
+
+
+
+
 const app = express()
 
 const port = 3000 
@@ -24,8 +28,6 @@ app.use('/user', userRouter)
 app.use('/sell', sellRouter)
 app.use('/products', productsRouter)
 app.use('/categories', categoriesRouter)
-
-
 
 
 

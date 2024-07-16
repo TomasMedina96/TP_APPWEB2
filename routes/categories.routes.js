@@ -2,6 +2,7 @@
 import { Router } from "express";
 //funcion de node js para leer archivos
 import {readFile} from 'fs/promises';
+import { createCategory,allCategory } from "../db/actions/category.actions.js";
 
 //lee y trae el archivo
 const fileCategories = await readFile('./data/categorias.json','utf-8')
@@ -10,9 +11,9 @@ const categoriesData = JSON.parse(fileCategories)
 
 const router = Router()
 
-router.get('/all/', (req,res) =>{
+router.get('/all/',async (req,res) =>{
 try {
-    const result = categoriesData.map(e => e)
+    const result = await allCategory()
 
     res.status(200).json(result)
 } catch (error) {
@@ -21,6 +22,21 @@ try {
 
 }
 )
+
+
+router.post('/newcategory/', async (req,res) =>{
+    try {
+       const {nombre} = req.body
+    
+       const result = await createCategory({nombre})
+     
+       res.status(200).json(result)
+       
+    } catch (error) {
+       console.log(error)
+       res.status(400).json()
+    }
+    })
 
 
 export default router;

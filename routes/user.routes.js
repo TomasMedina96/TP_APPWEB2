@@ -6,6 +6,7 @@ import { sign } from "../utils/middleware.js";
 
 import { decode } from "../utils/middleware.js";
 import bcrypt from 'bcryptjs'
+import { createUser,validateUser } from "../db/actions/user.actions.js";
 
 //lee y trae el archivo
 const fileUsers = await readFile('./data/usuarios.json','utf-8')
@@ -22,14 +23,15 @@ router.post('/users/validation', async(req, res) => {
    try {
        const { email, pass } = req.body;
 
-       const result = userData.find(e => e.email === email);
+       const result = await validateUser(email)
        if(!result){
          return res.status(404).send({status:false});
        }
-
+       console.log(result)
        const controlPass = bcrypt.compareSync(pass , result.contraseña)
 
        const resultado = {
+         "idUsuario": result._id,
          "nombre": result.nombre,
          "apellido": result.apellido,
          "email" : result.email
@@ -51,8 +53,6 @@ router.post('/users/validation', async(req, res) => {
 router.post('/newuser/', async (req,res)=>{
    try {
 
-      let lastUserId = userData.length > 0 ? userData[userData.length - 1].id : 0;
-
       const { nombre, apellido, email, contraseña } = req.body;
 
         // Verificación de que todos los campos requeridos están presentes
@@ -63,17 +63,16 @@ router.post('/newuser/', async (req,res)=>{
         const hashedPass = bcrypt.hashSync(contraseña, 8)
 
        const new_user =   {
-         "id": lastUserId+1,
          "nombre": nombre,
          "apellido": apellido,
          "email": email,
          "contraseña": hashedPass
        }
 
-       userData.push(new_user);
-       await writeFile('./data/usuarios.json', JSON.stringify(userData, null, 2), 'utf-8');
-       res.status(200).json("Usuario registrado con exito")
-      
+       const result = await createUser({ nombre, apellido, email, contraseña })
+
+    
+       res.status(200).json(result)  
    } catch (error) {
       res.status(500).json('Error en el servidor: ' + error.message);
    }

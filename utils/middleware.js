@@ -8,7 +8,7 @@ export const sign = async (result)=>{
     }
 
     try {
-        const token = await jwt.sign({...result}, SECRET, {expiresIn: 10} )
+        const token = await jwt.sign({...result}, SECRET, {expiresIn: 10000} )
         return token
     } catch (error) {
         console.log(error)
